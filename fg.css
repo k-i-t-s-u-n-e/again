@@ -1,0 +1,373 @@
+.fg {
+  position: absolute;
+  width: 100vw;
+  height: 2100vh;
+  overflow-x: hidden;
+}
+
+.fg .cloud {
+  background-image: url("assets/cloud.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 40vh;
+}
+
+.fg .bunny {
+  background-image: url("assets/cloud-bunny.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 30vh;
+}
+
+.fg .bunny2 {
+  background-image: url("assets/cloud-bunny2.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25vw;
+  height: 25vh;
+}
+
+.fg .cloud-long {
+  background-image: url("assets/cloud-long.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 85vw;
+  height: 80vh;
+}
+
+.fg .rain {
+  background-image: url("assets/rain.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: round;
+  width: 95vw;
+  height: 180vh;
+}
+
+.fg .sun {
+  background-image: url("assets/sun2.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 70vw;
+  margin-top: -35vw;
+  margin-left: -35vw;
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+
+.fg .sun:before {
+  content: " ";
+  background-image: url("assets/sun1.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 70vw;
+  -webkit-animation: spin2 4s linear infinite;
+  -moz-animation: spin2 4s linear infinite;
+  animation: spin2 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(30deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+@-moz-keyframes spin2 {
+  100% {
+    -moz-transform: rotate(-30deg);
+  }
+}
+@-webkit-keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-30deg);
+  }
+}
+@keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+}
+
+.fg .rainbow {
+  background-image: url("assets/rainbow.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fg .sparkle {
+  background-image: url("assets/sparkle.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: round;
+  width: 100vw;
+  height: 150vh;
+}
+
+.fg .rushing {
+  position: absolute;
+  background: #ff0000;
+  background: linear-gradient(#99000000 0%, #ff000099 50%, #99000000 100%);
+
+  /* //box-shadow: 0 0 30vw 20vw #ff0000; */
+  height: 120vh;
+  width: 100vw;
+  -webkit-animation: blink 1.5s ease-in infinite;
+  -moz-animation: blink 1.5s ease-in infinite;
+  animation: blink 1s ease-in infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fg .ghost {
+  background-image: url("assets/ghost.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 30vh;
+  opacity: 0.05;
+
+  animation-name: ghost;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.fg .ghost2 {
+  background-image: url("assets/ghost2.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 20vh;
+  opacity: 0.05;
+
+  animation-name: ghost;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ghost {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fg .sit {
+  background-image: url("assets/sit.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 60vh;
+  min-height: 100px;
+  min-width: 250px;
+}
+
+.fg .why {
+  position: absolute;
+  user-select: none;
+  opacity: 0.2;
+  color: black;
+  font-family: sans-serif;
+}
+
+.fg .cut {
+  background-image: url("assets/cut.png");
+  background-position: bottom;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 40vw;
+  height: 40vh;
+}
+
+.fg .dropc {
+  position: relative;
+  width: 20px;
+  animation-name: drip;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drip {
+  100% {
+    transform: translateY(80vh);
+  }
+}
+
+.fg .drop {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  animation-name: grow;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background: rgb(90, 0, 0);
+  border-bottom-color: rgb(90, 0, 0);
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.1, 0.1) translateY(0px);
+  }
+  60% {
+    transform: scale(1, 1) translateY(25px);
+    background: rgb(90, 0, 0);
+    border-bottom-color: rgb(90, 0, 0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(25px);
+    background-color: #3333aa;
+    border-bottom-color: #3333aa;
+  }
+}
+
+.fg .drop:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid;
+  border-bottom-color: inherit;
+  top: -22px;
+}
+
+.drop.tear {
+  background-color: #3333aa;
+}
+.drop.tear:before {
+  border-bottom-color: #3333aa;
+}
+
+.fg .wave {
+  position: absolute;
+  width: 4vw;
+  height: 2vw;
+  border-radius: 100%;
+  border: 1px solid #3333aa;
+  animation-name: wave;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.9s;
+  opacity: 0;
+}
+
+@keyframes wave {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.5, 0.5);
+  }
+  10% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+    transform: scale(10, 10);
+  }
+}
+
+.fg .cat {
+  background-image: url("assets/cat2.svg");
+  background-position: bottom;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 30vh;
+  opacity: 0.1;
+}
+
+.fg .paw {
+  background-image: url("assets/paw.svg");
+  background-position: bottom;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10vw;
+  height: 10vh;
+  opacity: 0.1;
+}
+
+.author > p {
+  text-align: center;
+  width: 170px;
+}
