@@ -1,44 +1,41 @@
-body{
+body {
   margin:0;
   overflow-x:hidden;
   font-family: Georgia,Times,Times New Roman,serif; 
-
 }
 
 .poem {
   position: absolute;
   top: 0;
 }
-.poem section{
-  height:100vh;
-  width:100vw;  
+.poem section {
+  height: 100vh;
+  width: 100vw;
   box-sizing: border-box;
   position: relative;
 }
 
 .poem section.is-active div {
-  
   position: fixed;
   top: 50vh;
   left: 50vw;
 }
 
 .poem section.is-out div {
-  top:70%;
+  top: 70%;
 }
 
-.poem section>div{
+.poem section > div {
   position: absolute;
-  left:50%;
-  margin-left:-200px;
-  top:50%;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
   margin-top: -100px;
-  height:200px;
-  width:400px;
-  
+  height: 200px;
+  width: 400px;
 }
 
-.poem h1{
+.poem h1 {
   text-align: center;
   line-height: 200px;
   vertical-align: middle;
@@ -46,7 +43,7 @@ body{
   font-size: 32px;
 }
 
-.poem p{
+.poem p {
   margin-top: 0;
   font-size: 20px;
   padding-left: 60px;
@@ -58,84 +55,84 @@ body{
   height: 100%;
 }
 
-.bg section{
-  height:100vh;
-  width:100vw;  
+.bg section {
+  height: 100vh;
+  width: 100vw;
   box-sizing: border-box;
   position: relative;
 }
 
 .bg section[data-key="again"] {
-  background: linear-gradient(to bottom, #ffffff 0%,#C2EAF2 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #c2eaf2 100%);
 }
 .bg section[data-key="sometimes"] {
-  background: linear-gradient(to bottom, #C2EAF2 0%,#C2DAF2 100%);
+  background: linear-gradient(to bottom, #c2eaf2 0%, #c2daf2 100%);
 }
 .bg section[data-key="cycle"] {
-  background: linear-gradient(to bottom, #C2DAF2 0%,#ADC3D9 100%);
+  background: linear-gradient(to bottom, #c2daf2 0%, #adc3d9 100%);
 }
 .bg section[data-key="dance"] {
-  background: linear-gradient(to bottom, #ADC3D9 0%,#99ACBF 100%);
+  background: linear-gradient(to bottom, #adc3d9 0%, #99acbf 100%);
 }
 .bg section[data-key="happiness"] {
-  background: linear-gradient(to bottom, #99ACBF 0%,#FFFFA6 100%);
+  background: linear-gradient(to bottom, #99acbf 0%, #ffffa6 100%);
 }
 .bg section[data-key="joy"] {
-  background: linear-gradient(to bottom, #FFFFA6 0%,#FF8C5E 100%);
+  background: linear-gradient(to bottom, #ffffa6 0%, #ff8c5e 100%);
 }
 .bg section[data-key="rushing"] {
-  background: linear-gradient(to bottom, #FF8C5E 0%,#FC2423 100%);
+  background: linear-gradient(to bottom, #ff8c5e 0%, #fc2423 100%);
 }
 .bg section[data-key="overwhelmed"] {
-  background: linear-gradient(to bottom, #FC2423 0%,#67221B 100%);
+  background: linear-gradient(to bottom, #fc2423 0%, #67221b 100%);
 }
 .bg section[data-key="scared"] {
-  background: linear-gradient(to bottom, #67221B 0%,#4E1A14 100%);
+  background: linear-gradient(to bottom, #67221b 0%, #4e1a14 100%);
 }
 .bg section[data-key="hide"] {
-  background: linear-gradient(to bottom, #4E1A14 0%,#291A18 100%);
+  background: linear-gradient(to bottom, #4e1a14 0%, #291a18 100%);
 }
 .bg section[data-key="helpless"] {
-  background: linear-gradient(to bottom, #291A18 0%,#291A18 100%);
+  background: linear-gradient(to bottom, #291a18 0%, #291a18 100%);
 }
 .bg section[data-key="why"] {
-  background: linear-gradient(to bottom, #291A18 0%,#292525 100%);
+  background: linear-gradient(to bottom, #291a18 0%, #292525 100%);
 }
 .bg section[data-key="wrist"] {
-  background: linear-gradient(to bottom, #292525 0%,#292525 100%);
+  background: linear-gradient(to bottom, #292525 0%, #292525 100%);
 }
 .bg section[data-key="cry"] {
-  background: linear-gradient(to bottom, #292525 0%,#151629 100%);
+  background: linear-gradient(to bottom, #292525 0%, #151629 100%);
 }
 .bg section[data-key="purr"] {
-  background: linear-gradient(to bottom, #151629 0%,#152129 100%);
+  background: linear-gradient(to bottom, #151629 0%, #152129 100%);
 }
 .bg section[data-key="cat"] {
-  background: linear-gradient(to bottom, #152129 0%,#1C2B36 100%);
+  background: linear-gradient(to bottom, #152129 0%, #1c2b36 100%);
 }
 .bg section[data-key="wake"] {
-  background: linear-gradient(to bottom, #1C2B36 0%,#70735A 100%);
+  background: linear-gradient(to bottom, #1c2b36 0%, #70735a 100%);
 }
 .bg section[data-key="ashamed"] {
-  background: linear-gradient(to bottom, #70735A 0%,#D9D2A2 100%);
+  background: linear-gradient(to bottom, #70735a 0%, #d9d2a2 100%);
 }
 .bg section[data-key="own"] {
-  background: linear-gradient(to bottom, #D9D2A2 0%,#ECF0BC 100%);
+  background: linear-gradient(to bottom, #d9d2a2 0%, #ecf0bc 100%);
 }
 .bg section[data-key="time"] {
-  background: linear-gradient(to bottom, #ECF0BC 0%,#64BBE2 100%);
+  background: linear-gradient(to bottom, #ecf0bc 0%, #64bbe2 100%);
 }
 .bg section[data-key="scars"] {
-  background: linear-gradient(to bottom, #64BBE2 0%,#8ADBFF 100%);
+  background: linear-gradient(to bottom, #64bbe2 0%, #8adbff 100%);
 }
 .bg section[data-key="family"] {
-  background: linear-gradient(to bottom, #8ADBFF 0%,#CFEFFD 100%);
+  background: linear-gradient(to bottom, #8adbff 0%, #cfeffd 100%);
 }
 .bg section[data-key="future"] {
-  background: linear-gradient(to bottom, #CFEFFD 0%,#eeeeee 100%);
+  background: linear-gradient(to bottom, #cfeffd 0%, #eeeeee 100%);
 }
 .bg section[data-key="thanks"] {
-  background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 10%,#eeeeee 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 10%, #eeeeee 100%);
 }
 
 .poem section[data-key="scared"],
@@ -145,29 +142,6 @@ body{
 .poem section[data-key="wrist"],
 .poem section[data-key="cry"],
 .poem section[data-key="purr"],
-.poem section[data-key="cat"]{
-  color:#AB92C3;
+.poem section[data-key="cat"] {
+  color: #ab92c3;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
